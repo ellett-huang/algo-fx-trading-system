@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{980a05f5-187e-44bb-9bc3-2158e8f98866}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>AlgoTradeDesign</Name>
+    <RootNamespace>algoTrade</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="AlgoProcess.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AlgoProcess.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AlgoProcess.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Core.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Core.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="DataFeed.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataFeed.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataFeed.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="FeatureTextureGeneration.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FeatureTextureGeneration.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FeatureTextureGeneration.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Core.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Core.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\algoTrade.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram1.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

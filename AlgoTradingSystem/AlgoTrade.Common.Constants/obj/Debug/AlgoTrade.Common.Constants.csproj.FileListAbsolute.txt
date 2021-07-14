@@ -1,0 +1,15 @@
+C:\Ellett\AlgoTrade.Common.Constants\obj\Debug\ResolveAssemblyReference.cache
+C:\Ellett\AlgoTrade.Common.Constants\bin\Debug\AlgoTrade.Common.Constants.dll
+C:\Ellett\AlgoTrade.Common.Constants\bin\Debug\AlgoTrade.Common.Constants.pdb
+C:\Ellett\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.dll
+C:\Ellett\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.pdb
+C:\trading\Algo_2\AlgoTrade.Common.Constants\bin\Debug\AlgoTrade.Common.Constants.dll
+C:\trading\Algo_2\AlgoTrade.Common.Constants\bin\Debug\AlgoTrade.Common.Constants.pdb
+C:\trading\Algo_2\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.dll
+C:\trading\Algo_2\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.pdb
+C:\trading\Algo_2\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.csprojResolveAssemblyReference.cache
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.Common.Constants\bin\Debug\AlgoTrade.Common.Constants.dll
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.Common.Constants\bin\Debug\AlgoTrade.Common.Constants.pdb
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.dll
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.pdb
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.Common.Constants\obj\Debug\AlgoTrade.Common.Constants.csprojResolveAssemblyReference.cache

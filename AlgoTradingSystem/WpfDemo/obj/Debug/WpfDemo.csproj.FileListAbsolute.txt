@@ -1,0 +1,2 @@
+C:\Trading\algo\WpfDemo\WpfDemo\bin\Debug\WpfDemo.exe.config
+C:\Trading\algo\AlgoTradingSystem\WpfDemo\bin\Debug\WpfDemo.exe.config

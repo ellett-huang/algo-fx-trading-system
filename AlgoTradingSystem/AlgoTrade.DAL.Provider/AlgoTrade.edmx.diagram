@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7617bca89fb8484f948cf5e64d60484d" Name="Diagram1">
+        <EntityTypeShape EntityType="AlgoTradeModel.AlgoRule" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.EnumType" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.Log" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.Position" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.RiskRule" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.SymbolList" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlgoTradeModel.Transaction" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="AlgoTradeModel.FK_Logs_EnumTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AlgoTradeModel.FK_Positions_EnumTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AlgoTradeModel.FK_Transactions_EnumType_ActionType" ManuallyRouted="false" />
+        <AssociationConnector Association="AlgoTradeModel.FK_Transactions_EnumTypes_ConditionType" ManuallyRouted="false" />
+        <AssociationConnector Association="AlgoTradeModel.FK_Transactions_EnumTypes_PositionType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

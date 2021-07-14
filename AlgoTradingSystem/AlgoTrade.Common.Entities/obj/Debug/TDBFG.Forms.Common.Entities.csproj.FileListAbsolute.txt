@@ -1,0 +1,5 @@
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Entities\bin\Debug\TDBFG.Forms.Common.Entities.dll
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Entities\bin\Debug\TDBFG.Forms.Common.Entities.pdb
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Entities\obj\Debug\TDBFG.Forms.Common.Entities.dll
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Entities\obj\Debug\TDBFG.Forms.Common.Entities.pdb

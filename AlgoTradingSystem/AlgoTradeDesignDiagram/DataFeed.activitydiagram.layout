@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataFeeding">
+  <activityRootModelMoniker Id="d308cc3f-0d98-43da-859d-ee23d32b70b5" />
+  <nestedChildShapes>
+    <sendSignalActionShape Id="6e29c072-1337-4c47-aa39-4a36b554606b" absoluteBounds="5.625, 2.5, 1.125, 0.375" customColor="185, 212, 238">
+      <sendSignalActionMoniker Id="a4806a3d-c61b-4528-8e31-fe38542180cb" LastKnownName="Raw Data From Data Provider" />
+      <relativeChildShapes />
+    </sendSignalActionShape>
+    <actionShape Id="af4e3ced-712f-4143-a336-6832df7f8217" absoluteBounds="6.875, 2.375, 1.375, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="fa0209fb-3e74-455f-8114-392a0a2ae577" LastKnownName="Live Data Adapter" />
+    </actionShape>
+    <objectNodeShape Id="2701eca8-ed37-489c-8d64-a17ad26eada5" absoluteBounds="6.75, 3.625, 1.625, 0.375" customColor="Gainsboro">
+      <objectNodeMoniker Id="48f3c0ba-0e83-4ece-b2ff-234796116187" LastKnownName="Data Provider API" />
+    </objectNodeShape>
+    <sendSignalActionShape Id="79b5a00c-c43a-4bdc-89a1-750c16659d73" absoluteBounds="8.375, 2.5, 1.125, 0.25" customColor="185, 212, 238">
+      <sendSignalActionMoniker Id="e2be0d08-12cd-4227-b1eb-d921f999c1d4" LastKnownName="Formated Data" />
+      <relativeChildShapes />
+    </sendSignalActionShape>
+    <objectFlowConnector edgePoints="[(7.5625 : 3); (7.5625 : 3.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="7fd0f15a-ccf9-4759-9149-ea0a69ea7dfc" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="af4e3ced-712f-4143-a336-6832df7f8217" />
+        <objectNodeShapeMoniker Id="2701eca8-ed37-489c-8d64-a17ad26eada5" />
+      </nodes>
+    </objectFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

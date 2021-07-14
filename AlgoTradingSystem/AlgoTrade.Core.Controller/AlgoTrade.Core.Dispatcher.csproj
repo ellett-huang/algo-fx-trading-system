@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F8CA9B2-545C-46B9-B4FF-186FE733D7B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlgoTrade.Core.Controller</RootNamespace>
+    <AssemblyName>AlgoTrade.Core.Controller</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSharpAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\IBCSharpClient\bin\Debug\CSharpAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ddfplus">
+      <HintPath>..\DataFeed API\ddfplus.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\PrismAPI\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="RTDataFeed">
+      <HintPath>..\DataFeed API\RTDataFeed.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlgoDispatcher.cs" />
+    <Compile Include="AlgoProcess.cs" />
+    <Compile Include="DataFeed.cs" />
+    <Compile Include="EventArgurments\NewQuoteEventArgs.cs" />
+    <Compile Include="Helpers\AlgoDispatcherHelper.cs" />
+    <Compile Include="Helpers\AlgoProcessHelper.cs" />
+    <Compile Include="IBDataFeed.cs" />
+    <Compile Include="Interfaces\IAlgoDispatcher.cs" />
+    <Compile Include="Interfaces\IAlgoProcess.cs" />
+    <Compile Include="Interfaces\IDataFeed.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\algoTradeLib\AlgoTradeLib.csproj">
+      <Project>{9a3af0fb-f092-44b3-bd63-a0ad81d404f6}</Project>
+      <Name>AlgoTradeLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoTrade.Common.Constants\AlgoTrade.Common.Constants.csproj">
+      <Project>{2beea435-288f-43e3-82e2-b3f7260c81a9}</Project>
+      <Name>AlgoTrade.Common.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoTrade.Common.Entities\AlgoTrade.Common.Entities.csproj">
+      <Project>{bc9faf43-97a5-4aa5-9165-cd86dbf9510d}</Project>
+      <Name>AlgoTrade.Common.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoTrade.Common.Exceptions\AlgoTrade.Common.Exceptions.csproj">
+      <Project>{5923aec3-a137-49fe-a9b8-74f192a96610}</Project>
+      <Name>AlgoTrade.Common.Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoTrade.Common.Log\AlgoTrade.Common.Log.csproj">
+      <Project>{63f11a67-4499-4756-9e45-97b48fccb725}</Project>
+      <Name>AlgoTrade.Common.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoTrade.DAL.Provider\AlgoTrade.DAL.Provider.csproj">
+      <Project>{f151eb6f-5686-4cf4-aed1-a645e73dad1e}</Project>
+      <Name>AlgoTrade.DAL.Provider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

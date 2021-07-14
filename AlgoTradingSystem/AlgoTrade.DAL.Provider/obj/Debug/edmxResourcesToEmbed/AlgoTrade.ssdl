@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlgoTradeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="AlgoTradeModelStoreContainer">
+    <EntitySet Name="AlgoRules" EntityType="AlgoTradeModel.Store.AlgoRules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnumTypes" EntityType="AlgoTradeModel.Store.EnumTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Logs" EntityType="AlgoTradeModel.Store.Logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Positions" EntityType="AlgoTradeModel.Store.Positions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RiskRules" EntityType="AlgoTradeModel.Store.RiskRules" store:Type="Tables" store:Schema="dbo" store:Name="RiskRules">
+      <DefiningQuery>SELECT 
+      [RiskRules].[ID] AS [ID], 
+      [RiskRules].[RiskRulesTypeValue] AS [RiskRulesTypeValue], 
+      [RiskRules].[RiskRulesTypeName] AS [RiskRulesTypeName], 
+      [RiskRules].[RuleValue] AS [RuleValue], 
+      [RiskRules].[AlgoRuleName] AS [AlgoRuleName], 
+      [RiskRules].[Symbol] AS [Symbol], 
+      [RiskRules].[AlgoRuleID] AS [AlgoRuleID]
+      FROM [dbo].[RiskRules] AS [RiskRules]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SymbolList" EntityType="AlgoTradeModel.Store.SymbolList" store:Type="Tables" store:Schema="dbo" store:Name="SymbolList">
+      <DefiningQuery>SELECT 
+      [SymbolList].[ID] AS [ID], 
+      [SymbolList].[Symbol] AS [Symbol], 
+      [SymbolList].[Instrument] AS [Instrument], 
+      [SymbolList].[Market] AS [Market], 
+      [SymbolList].[MarketType] AS [MarketType], 
+      [SymbolList].[CurrentPrice] AS [CurrentPrice]
+      FROM [dbo].[SymbolList] AS [SymbolList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysdiagrams" EntityType="AlgoTradeModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Transactions" EntityType="AlgoTradeModel.Store.Transactions" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Logs_EnumTypes" Association="AlgoTradeModel.Store.FK_Logs_EnumTypes">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Positions_EnumTypes" Association="AlgoTradeModel.Store.FK_Positions_EnumTypes">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Positions" EntitySet="Positions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_EnumType_ActionType" Association="AlgoTradeModel.Store.FK_Transactions_EnumType_ActionType">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_EnumTypes_ConditionType" Association="AlgoTradeModel.Store.FK_Transactions_EnumTypes_ConditionType">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_EnumTypes_PositionType" Association="AlgoTradeModel.Store.FK_Transactions_EnumTypes_PositionType">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AlgoRules">
+    <Key>
+      <PropertyRef Name="Token" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="varchar" MaxLength="50" />
+    <Property Name="BuyFeatureTexture" Type="xml" />
+    <Property Name="PositionTypeValue" Type="int" />
+    <Property Name="PositionTypeName" Type="varchar" MaxLength="150" />
+    <Property Name="ActionTypeValue" Type="int" />
+    <Property Name="ActionTypeName" Type="varchar" MaxLength="150" />
+    <Property Name="Accuracy" Type="float" />
+    <Property Name="IsEnable" Type="bit" Nullable="false" />
+    <Property Name="Token" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SellFeatureTexture" Type="xml" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Profit" Type="float" />
+  </EntityType>
+  <EntityType Name="EnumTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EnumName" Type="varchar" MaxLength="150" />
+    <Property Name="EnumType" Type="varchar" MaxLength="150" />
+    <Property Name="EnumValue" Type="int" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LogType" Type="varchar" MaxLength="50" />
+    <Property Name="Message" Type="varchar(max)" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="LogTypeID" Type="int" />
+  </EntityType>
+  <EntityType Name="Positions">
+    <Key>
+      <PropertyRef Name="PositionID" />
+    </Key>
+    <Property Name="PositionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="varchar" MaxLength="150" />
+    <Property Name="CostBase" Type="decimal" Scale="4" />
+    <Property Name="CurrentPrice" Type="decimal" Scale="4" />
+    <Property Name="Shares" Type="int" />
+    <Property Name="PositionTypeID" Type="int" />
+    <Property Name="PositionTypeName" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'AlgoTrade.dbo.RiskRules' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="RiskRules">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="RiskRulesTypeValue" />
+      <PropertyRef Name="RiskRulesTypeName" />
+      <PropertyRef Name="RuleValue" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RiskRulesTypeValue" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="RiskRulesTypeName" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="RuleValue" Type="float" Nullable="false" />
+    <Property Name="AlgoRuleName" Type="nchar" MaxLength="10" />
+    <Property Name="Symbol" Type="nvarchar" MaxLength="100" />
+    <Property Name="AlgoRuleID" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'AlgoTrade.dbo.SymbolList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="SymbolList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="varchar" MaxLength="50" />
+    <Property Name="Instrument" Type="varchar" MaxLength="50" />
+    <Property Name="Market" Type="varchar" MaxLength="50" />
+    <Property Name="MarketType" Type="varchar" MaxLength="50" />
+    <Property Name="CurrentPrice" Type="float" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="TransID" />
+    </Key>
+    <Property Name="TransID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="varchar" MaxLength="150" />
+    <Property Name="ActionTypeID" Type="int" />
+    <Property Name="ActionTypeName" Type="varchar" MaxLength="150" />
+    <Property Name="ConditionTypeID" Type="int" />
+    <Property Name="ConditionTypeName" Type="varchar" MaxLength="150" />
+    <Property Name="PositionTypeID" Type="int" />
+    <Property Name="PositionTypeName" Type="varchar" MaxLength="150" />
+    <Property Name="Price" Type="decimal" Scale="4" />
+    <Property Name="IsPaperTrade" Type="bit" />
+    <Property Name="TradingDate" Type="datetime" />
+    <Property Name="AlgoRuleToken" Type="uniqueidentifier" />
+    <Property Name="Shares" Type="int" />
+  </EntityType>
+  <Association Name="FK_Logs_EnumTypes">
+    <End Role="EnumTypes" Type="AlgoTradeModel.Store.EnumTypes" Multiplicity="0..1" />
+    <End Role="Logs" Type="AlgoTradeModel.Store.Logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="LogTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Positions_EnumTypes">
+    <End Role="EnumTypes" Type="AlgoTradeModel.Store.EnumTypes" Multiplicity="0..1" />
+    <End Role="Positions" Type="AlgoTradeModel.Store.Positions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Positions">
+        <PropertyRef Name="PositionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_EnumType_ActionType">
+    <End Role="EnumTypes" Type="AlgoTradeModel.Store.EnumTypes" Multiplicity="0..1" />
+    <End Role="Transactions" Type="AlgoTradeModel.Store.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="ActionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_EnumTypes_ConditionType">
+    <End Role="EnumTypes" Type="AlgoTradeModel.Store.EnumTypes" Multiplicity="0..1" />
+    <End Role="Transactions" Type="AlgoTradeModel.Store.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="ConditionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_EnumTypes_PositionType">
+    <End Role="EnumTypes" Type="AlgoTradeModel.Store.EnumTypes" Multiplicity="0..1" />
+    <End Role="Transactions" Type="AlgoTradeModel.Store.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="PositionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

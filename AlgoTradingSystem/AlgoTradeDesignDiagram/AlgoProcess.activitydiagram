@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="1037fb33-31f9-4bb4-af7d-79ed92258860" name="AlgoProcess" linkedPackageId="92dfd15c-c47b-4565-b719-eaadb0c4afb7" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="26782bdd-0848-445f-afd8-bd4cc8764445">
+      <elementDefinition Id="543f5aa1-8fcb-4acd-8b9c-bf384dc9a8ec" />
+      <body>Initial Program</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="fd567e8f-cfc6-4855-8686-f5a20140c3af" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="411196e3-6891-4c74-b367-23b5b4efcfb0">
+      <elementDefinition Id="def3454a-a56f-47bd-a18b-6353a8311fd4" />
+      <body>If nothing match</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="243c2e88-3448-45bb-86e8-c6f535d4213d" LastKnownName="Do Nothing" />
+      </annotatedElements>
+    </comment>
+    <comment Id="851d9692-2939-48ed-ab65-a68fe72b8dc3">
+      <elementDefinition Id="7ead83a2-5fbe-40e7-b663-1071c3df2fbc" />
+      <body>From Live Data Feeding Component</body>
+      <annotatedElements>
+        <acceptEventActionMoniker Id="8b78af95-deb2-4ea7-8f66-0e6bab0a364f" LastKnownName="Live Data Feeding" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="f47b82b7-7e71-4563-81a0-f75e741374ad" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="f0cb96e4-b0a5-4293-b279-70709e03d4fe" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bb566fe7-b46c-41ae-842d-2bdf6a4bc810">
+          <propertyInstance Id="249ee664-bf7a-4304-addd-285ada5d8cdb" name="BaseName">
+            <elementDefinition Id="f84c33d5-8d66-44ef-a950-aa86ba0dd905" />
+          </propertyInstance>
+          <elementDefinition Id="7cc52eba-5a37-48b3-aa14-bb7c1d35476c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="90c04905-78b3-47a5-88fd-3bdaabfeb91b">
+          <propertyInstance Id="98150f43-dbc3-4588-b4db-f91ffae5ebce" name="ClrAttributes">
+            <elementDefinition Id="baa8f308-6ff4-4296-8cf3-04f540f53bc6" />
+          </propertyInstance>
+          <elementDefinition Id="6d0770fc-84c6-438d-90b7-b771028abdc4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9131cb0a-ca86-44c2-8df1-38bdea255039">
+          <propertyInstance Id="f5c38dfc-4739-489f-9e73-3a4a9ecd9116" name="Usings">
+            <elementDefinition Id="13efe0a4-0a5b-4bf6-bfb4-16f6e0821622" />
+          </propertyInstance>
+          <elementDefinition Id="001f6474-3eaa-4276-8de6-dce0c962b028" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="00815669-ad2b-4d9e-ada4-7d1c89e075e9" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="edf74c85-abc4-424d-965a-e1c99cda4301" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c62eab58-89d8-4d7e-abba-d5fd1531e541">
+          <propertyInstance Id="1704f9d1-1628-4343-baa3-c8394f0924ef" name="Alias" value="AlgoCoreClass|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="e7b58d74-2597-437d-9070-fa093f5be425" />
+          </propertyInstance>
+          <elementDefinition Id="890d32ce-8578-4421-aec2-2a02f3d14df0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3fb13eb7-fb1e-4455-a237-3c9da80c744d">
+          <propertyInstance Id="644f735a-9430-4745-b0cb-aed3842a8f28" name="TemplateFilePath" value="AlgoCoreClass=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="73557c30-e57f-4e88-85de-b49e1e6524eb" />
+          </propertyInstance>
+          <elementDefinition Id="f54f3895-3cc8-42a2-88cc-228640e9a3d7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2bf31050-98cf-4b25-8635-7e1230c9527c">
+          <propertyInstance Id="30d6c1d3-faee-4805-a3c8-9e994abcdc23" name="ProjectPath" value="AlgoCoreClass=..\AlgoTrade.Core.Controller\AlgoTrade.Core.Controller.csproj|EnumTemplate=..\algoTradeLib\algoTradeLib.csproj|InterfaceTemplate=..\algoTradeLib\algoTradeLib.csproj|StructTemplate=..\algoTradeLib\algoTradeLib.csproj">
+            <elementDefinition Id="b848501d-8472-42f2-a71c-9ad9ebd6977a" />
+          </propertyInstance>
+          <elementDefinition Id="0fb2ea99-52c5-4669-b40e-2093827dee92" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ec52b857-4500-445b-b24c-9cc093f3e437">
+          <propertyInstance Id="0118300e-e885-4896-a70d-7d1ccc33e74c" name="TargetDirectory" value="AlgoCoreClass=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="2deffac2-efbc-4bac-84a9-63c740465926" />
+          </propertyInstance>
+          <elementDefinition Id="3c3dd084-cf31-49f8-9112-3876754816af" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0f2ef659-4e60-4619-b344-97b320786987">
+          <propertyInstance Id="789ab6b5-a9ac-4ec9-9687-635ea14e9a94" name="TargetName" value="AlgoCoreClass={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="a30ee56d-81a6-4172-b427-cbfe7ba95e1e" />
+          </propertyInstance>
+          <elementDefinition Id="2f10b22c-b93c-41c8-ac57-ad09c0a25d09" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fc18f097-c460-4f43-ae72-e8ac908331aa">
+          <propertyInstance Id="defcc77a-651b-4e97-9108-38ff1cb9dbc0" name="Overwrite" value="AlgoCoreClass=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="9c9a830d-ac4a-41d4-a81e-8c3e2e7fd4a6" />
+          </propertyInstance>
+          <elementDefinition Id="54559f95-f5c4-4ca4-924b-d56abd76ff5d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="45b87716-8c4c-4f66-a1b3-0a3cae56c4de">
+          <propertyInstance Id="659befca-15c4-4877-8144-544985319b23" name="Parameters">
+            <elementDefinition Id="e5e93618-b244-43d3-8a6d-75d47b459811" />
+          </propertyInstance>
+          <elementDefinition Id="b8164345-b95f-4044-8694-95d92842a4ae" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="1ec8eae3-cd81-4173-a8bd-6a301bea0dbc">
+      <profileInstance Id="625fb97b-083c-45cb-a1d4-5f8061520d86" name="CSharpProfile">
+        <elementDefinition Id="d9e1f7e4-92a9-4903-9045-df18a4652ed5" />
+      </profileInstance>
+      <elementDefinition Id="ba1b3a06-abab-42cb-a6cb-29a10015f6d8" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5075ef78-cb38-46c3-8e95-e8bf710c1f58">
+      <profileInstance Id="b7693dca-8ae4-4910-af4b-d2b6eadd392d" name="TextTemplateBindings">
+        <elementDefinition Id="f0c8ac52-877d-4cd8-ac2a-31acffa3a96e" />
+      </profileInstance>
+      <elementDefinition Id="ee8474a6-3120-4955-987d-a6af40e0b443" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="565d9412-bdcb-4c98-9711-ba86670c5447" name="AlgoProcess" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="7d9a6a52-77e6-48cf-a1f4-ad948e21c06f" />
+        <nodes>
+          <initialNode Id="fd567e8f-cfc6-4855-8686-f5a20140c3af" name="Initial1" isLeaf="false">
+            <elementDefinition Id="481ca05c-655d-4fc4-8ee7-18d43ad36c92" />
+            <flowNodeTargets>
+              <controlFlow Id="c4301c03-b75f-45f1-8f09-06a5bec9a4d4" isLeaf="false">
+                <opaqueActionMoniker Id="471dc459-a0d3-4d12-aeb3-f0663a17225c" LastKnownName="Create Live Data Buffer" />
+                <elementDefinition Id="f17280a9-39ca-45a0-8309-2726fd6ec221" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <acceptEventAction Id="8b78af95-deb2-4ea7-8f66-0e6bab0a364f" name="Live Data Feeding" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="5c33ca5d-2df3-409d-a329-81a389146cf8" />
+            <flowNodeTargets>
+              <controlFlow Id="0295dc49-fc47-4229-bd56-9bc9e54481de" isLeaf="false">
+                <opaqueActionMoniker Id="feb6bfc2-b10b-4775-af28-88a8e6d9448b" LastKnownName="Create feature texture and Update Live Data and feature to  Buffer" />
+                <elementDefinition Id="834ed7aa-8df9-4a9d-b1da-d8cda7342abd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode Id="18ba5886-e8e4-4e2a-95e9-9b4c67945b5f" name="Abstract" isLeaf="false">
+            <description>Abstract successful trading pairs</description>
+            <elementDefinition Id="e060e155-d853-4c75-bdff-a2a76e7c72ff" />
+            <flowNodeTargets>
+              <controlFlow Id="08a472df-26e0-4556-81b0-41e5241d1251" isLeaf="false">
+                <opaqueActionMoniker Id="ea9f43e9-e8ec-4ce5-a7d0-97c066fca439" LastKnownName="Check the risk rules and buy position." />
+                <elementDefinition Id="a9a14fbc-e0d0-4f40-824b-d13caddd2e8f" />
+              </controlFlow>
+              <controlFlow Id="759c3d86-cc44-4b05-9993-23283671c40d" isLeaf="false">
+                <opaqueActionMoniker Id="243c2e88-3448-45bb-86e8-c6f535d4213d" LastKnownName="Do Nothing" />
+                <elementDefinition Id="ae5ca894-2ee4-4377-9054-597ee81ee82a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="feb6bfc2-b10b-4775-af28-88a8e6d9448b" name="Create feature texture and Update Live Data and feature to  Buffer" isLeaf="false">
+            <elementDefinition Id="eedc8055-75ab-4601-a565-a46307b4875d" />
+            <flowNodeTargets>
+              <controlFlow Id="ee3c2f91-6a6e-46bf-8728-dd3bbc8cf3e4" isLeaf="false">
+                <opaqueActionMoniker Id="2916cb29-cf92-4f06-95d0-36e5b1b6702a" LastKnownName="If Break the risk rules , sell the position.Compare Target List to find out match record" />
+                <elementDefinition Id="b6399460-0d03-482a-b312-8dfafe1c2b21" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ea9f43e9-e8ec-4ce5-a7d0-97c066fca439" name="Check the risk rules and buy position." isLeaf="false">
+            <elementDefinition Id="6f0db3d2-6559-4d00-bbc3-d6af606a4560" />
+            <flowNodeTargets>
+              <controlFlow Id="f0a05c13-eed4-4252-9131-db8db2c6777e" isLeaf="false">
+                <opaqueActionMoniker Id="eae91193-c05a-4fd8-af2f-43f1a9dbb26b" LastKnownName="Update positionand target info to DB" />
+                <elementDefinition Id="95b76a93-5150-44e2-bba0-46afdca4a94b" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="2c973f5a-50cf-45bd-8627-d1185750b733" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fdc7b595-41ff-491f-89cc-76abffaf7057" LastKnownName="Risk Rules" />
+                <elementDefinition Id="b5b34711-5b66-45b5-bc2d-95c261963ae4" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="571bd917-de87-49e3-ae33-3005a8076d07" name="Target List(Static)" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="44ec08f2-75be-4657-aa72-5d76f10e589a" />
+            <upperBound>
+              <literalInteger Id="47932898-2f4a-4870-a2ec-c8ee44e55846" name="2147483647" value="2147483647">
+                <elementDefinition Id="525c2c6b-3f75-42a0-a253-362efcb0b500" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="243c2e88-3448-45bb-86e8-c6f535d4213d" name="Do Nothing" isLeaf="false">
+            <elementDefinition Id="d24e1e6c-25da-475a-a042-8b7b6da6c6ae" />
+          </opaqueAction>
+          <objectNode Id="7a6b8382-0dcf-49b5-9427-704011964ad7" name="Live Data Buffer" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a4462323-e00c-44bc-a153-18254ca4ad39" />
+            <upperBound>
+              <literalInteger Id="10766d16-60bf-498b-823c-3ccfb052c1f8" name="2147483647" value="2147483647">
+                <elementDefinition Id="8e97352e-d886-4f33-9ff3-e8cffe1e1ee0" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="eae91193-c05a-4fd8-af2f-43f1a9dbb26b" name="Update positionand target info to DB" isLeaf="false">
+            <elementDefinition Id="227ecf07-f179-45fd-b04d-c6686f4a9a9c" />
+            <flowNodeTargets>
+              <controlFlow Id="f416b53a-17b1-4e1a-aa3d-cd9c2811b69c" isLeaf="false">
+                <activityFinalNodeMoniker Id="5ce80965-9ae7-4e1c-9435-2406e2e94089" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4968d95c-6104-4358-96be-d44cee013c05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="471dc459-a0d3-4d12-aeb3-f0663a17225c" name="Create Live Data Buffer" isLeaf="false">
+            <elementDefinition Id="6c495ace-0cf3-46fd-ac3f-e05eeae87dea" />
+            <flowNodeTargets>
+              <controlFlow Id="8f1d49da-bd37-4cb4-8db0-fbf4134c3d3c" isLeaf="false">
+                <opaqueActionMoniker Id="feb6bfc2-b10b-4775-af28-88a8e6d9448b" LastKnownName="Create feature texture and Update Live Data and feature to  Buffer" />
+                <elementDefinition Id="b912d95e-2205-4761-b52e-06a00ee332c8" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="81ae253a-a552-4b14-812a-604bd2326e1f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="7a6b8382-0dcf-49b5-9427-704011964ad7" LastKnownName="Live Data Buffer" />
+                <elementDefinition Id="36dbde96-abaf-4c4c-858e-ce87fb6991fa" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <activityFinalNode Id="5ce80965-9ae7-4e1c-9435-2406e2e94089" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="2ec456e2-9796-446e-a95e-b0937721ae0c" />
+          </activityFinalNode>
+          <objectNode Id="fdc7b595-41ff-491f-89cc-76abffaf7057" name="Risk Rules" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="856e1ec8-1b7e-4267-b542-432314bf1e48" />
+            <upperBound>
+              <literalInteger Id="f4b54d5b-8632-4ff7-82ba-35a4a6d0d0cc" name="2147483647" value="2147483647">
+                <elementDefinition Id="b16616c0-8996-4b74-9bd3-c5d6eff74ff8" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="2916cb29-cf92-4f06-95d0-36e5b1b6702a" name="If Break the risk rules , sell the position.Compare Target List to find out match record" isLeaf="false">
+            <elementDefinition Id="65c56b27-8a3d-4357-9da8-925e714fa2e7" />
+            <flowNodeTargets>
+              <controlFlow Id="ea3b4eb2-fd18-4529-abf0-87012000a472" isLeaf="false">
+                <decisionNodeMoniker Id="18ba5886-e8e4-4e2a-95e9-9b4c67945b5f" LastKnownName="Abstract" />
+                <elementDefinition Id="20ee8615-072e-4e88-a679-e11b1fc9d8d3" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="437206c5-e0fb-4445-b8ba-6351f6c65f64" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fdc7b595-41ff-491f-89cc-76abffaf7057" LastKnownName="Risk Rules" />
+                <elementDefinition Id="77ff47c5-8015-4e05-9a43-b3e3e9fb485a" />
+              </objectFlow>
+              <objectFlow Id="042d2ff3-445c-4e7e-bdb7-b5b95236096e" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="571bd917-de87-49e3-ae33-3005a8076d07" LastKnownName="Target List(Static)" />
+                <elementDefinition Id="777217e8-35f5-4125-81a1-fc7ba89bf17d" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="92dfd15c-c47b-4565-b719-eaadb0c4afb7" name="algoTrade">
+    <elementDefinition Id="330285c1-0373-41e5-9e10-e1c665986a60" />
+    <profileInstances>
+      <packageHasProfileInstances Id="eed5b246-183f-4362-b19d-29f6180cadd6">
+        <profileInstance Id="d05656c8-c0f0-4e2d-bd1c-893e9fbd2484" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="96315050-310b-4337-b72d-cfed1d28d7a5">
+        <profileInstance Id="4239854b-7f58-4245-8bec-f0808942cf14" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

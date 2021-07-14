@@ -1,0 +1,5 @@
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Exceptions\bin\Debug\TDBFG.Forms.Common.Exceptions.dll
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Exceptions\bin\Debug\TDBFG.Forms.Common.Exceptions.pdb
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Exceptions\obj\Debug\ResolveAssemblyReference.cache
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Exceptions\obj\Debug\TDBFG.Forms.Common.Exceptions.dll
+C:\ellett\TD\dev\TD\WM.FP.WebForms.root\WM.FP.WebForms\TDBFG.Forms.Common.Exceptions\obj\Debug\TDBFG.Forms.Common.Exceptions.pdb

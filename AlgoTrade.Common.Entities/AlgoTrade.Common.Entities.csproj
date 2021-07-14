@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC9FAF43-97A5-4AA5-9165-CD86DBF9510D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlgoTrade.Core.Common.Entities</RootNamespace>
+    <AssemblyName>TDBFG.Forms.Common.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\TDBFG.Forms.Common.Entities.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlgoTradingRule.cs" />
+    <Compile Include="ComparisonElement.cs" />
+    <Compile Include="WeightList.cs" />
+    <Compile Include="FeatureElement.cs" />
+    <Compile Include="DataFeedInfo.cs" />
+    <Compile Include="Feature.cs" />
+    <Compile Include="FeatureTexture.cs" />
+    <Compile Include="IndexPair.cs" />
+    <Compile Include="Interfaces\ITradingOrder.cs" />
+    <Compile Include="MiddleBuffer.cs" />
+    <Compile Include="PositionType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiskConditionType.cs" />
+    <Compile Include="RiskRule.cs" />
+    <Compile Include="TradingAction.cs" />
+    <Compile Include="TradingActionResult.cs" />
+    <Compile Include="TradingData.cs" />
+    <Compile Include="TradingOrder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlgoTrade.Common.Constants\AlgoTrade.Common.Constants.csproj">
+      <Project>{2BEEA435-288F-43E3-82E2-B3F7260C81A9}</Project>
+      <Name>AlgoTrade.Common.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoTrade.Common.Log\AlgoTrade.Common.Log.csproj">
+      <Project>{63f11a67-4499-4756-9e45-97b48fccb725}</Project>
+      <Name>AlgoTrade.Common.Log</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

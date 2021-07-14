@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="AlgoTradeClient.Controls.ShutDownButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Infrastructure="clr-namespace:AlgoTradeClient.Infrastructure;assembly=StockTraderRI.Infrastructure">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="ShutdownButton" Command="{Binding  ShutdownCommand}" Template="{StaticResource ShutdownButtonTemplate}" Cursor="Hand">Shutdown System</Button>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

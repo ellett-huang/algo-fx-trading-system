@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlgoTradeModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AlgoTradeEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AlgoRules" EntityType="AlgoTradeModel.AlgoRule" />
+    <EntitySet Name="EnumTypes" EntityType="AlgoTradeModel.EnumType" />
+    <EntitySet Name="Logs" EntityType="AlgoTradeModel.Log" />
+    <EntitySet Name="Positions" EntityType="AlgoTradeModel.Position" />
+    <EntitySet Name="RiskRules" EntityType="AlgoTradeModel.RiskRule" />
+    <EntitySet Name="SymbolLists" EntityType="AlgoTradeModel.SymbolList" />
+    <EntitySet Name="sysdiagrams" EntityType="AlgoTradeModel.sysdiagram" />
+    <EntitySet Name="Transactions" EntityType="AlgoTradeModel.Transaction" />
+    <AssociationSet Name="FK_Logs_EnumTypes" Association="AlgoTradeModel.FK_Logs_EnumTypes">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Positions_EnumTypes" Association="AlgoTradeModel.FK_Positions_EnumTypes">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Positions" EntitySet="Positions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_EnumType_ActionType" Association="AlgoTradeModel.FK_Transactions_EnumType_ActionType">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_EnumTypes_ConditionType" Association="AlgoTradeModel.FK_Transactions_EnumTypes_ConditionType">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_EnumTypes_PositionType" Association="AlgoTradeModel.FK_Transactions_EnumTypes_PositionType">
+      <End Role="EnumTypes" EntitySet="EnumTypes" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AlgoRule">
+    <Key>
+      <PropertyRef Name="Token" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="BuyFeatureTexture" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PositionTypeValue" Type="Int32" />
+    <Property Name="PositionTypeName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ActionTypeValue" Type="Int32" />
+    <Property Name="ActionTypeName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Accuracy" Type="Double" />
+    <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+    <Property Name="Token" Type="Guid" Nullable="false" />
+    <Property Name="SellFeatureTexture" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Type="Double" Name="Profit" />
+  </EntityType>
+  <EntityType Name="EnumType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EnumName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="EnumType1" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="EnumValue" Type="Int32" />
+    <NavigationProperty Name="Logs" Relationship="AlgoTradeModel.FK_Logs_EnumTypes" FromRole="EnumTypes" ToRole="Logs" />
+    <NavigationProperty Name="Positions" Relationship="AlgoTradeModel.FK_Positions_EnumTypes" FromRole="EnumTypes" ToRole="Positions" />
+    <NavigationProperty Name="Transactions" Relationship="AlgoTradeModel.FK_Transactions_EnumType_ActionType" FromRole="EnumTypes" ToRole="Transactions" />
+    <NavigationProperty Name="Transactions1" Relationship="AlgoTradeModel.FK_Transactions_EnumTypes_ConditionType" FromRole="EnumTypes" ToRole="Transactions" />
+    <NavigationProperty Name="Transactions2" Relationship="AlgoTradeModel.FK_Transactions_EnumTypes_PositionType" FromRole="EnumTypes" ToRole="Transactions" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LogType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="LogTypeID" Type="Int32" />
+    <NavigationProperty Name="EnumType" Relationship="AlgoTradeModel.FK_Logs_EnumTypes" FromRole="Logs" ToRole="EnumTypes" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="PositionID" />
+    </Key>
+    <Property Name="PositionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="CostBase" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="CurrentPrice" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Shares" Type="Int32" />
+    <Property Name="PositionTypeID" Type="Int32" />
+    <Property Name="PositionTypeName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="EnumType" Relationship="AlgoTradeModel.FK_Positions_EnumTypes" FromRole="Positions" ToRole="EnumTypes" />
+  </EntityType>
+  <EntityType Name="RiskRule">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="RiskRulesTypeValue" />
+      <PropertyRef Name="RiskRulesTypeName" />
+      <PropertyRef Name="RuleValue" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RiskRulesTypeValue" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="RiskRulesTypeName" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="RuleValue" Type="Double" Nullable="false" />
+    <Property Type="String" Name="AlgoRuleName" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Symbol" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="AlgoRuleID" />
+  </EntityType>
+  <EntityType Name="SymbolList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Instrument" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Market" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MarketType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CurrentPrice" Type="Double" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="TransID" />
+    </Key>
+    <Property Name="TransID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Symbol" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ActionTypeID" Type="Int32" />
+    <Property Name="ActionTypeName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ConditionTypeID" Type="Int32" />
+    <Property Name="ConditionTypeName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="PositionTypeID" Type="Int32" />
+    <Property Name="PositionTypeName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IsPaperTrade" Type="Boolean" />
+    <Property Name="TradingDate" Type="DateTime" Precision="3" />
+    <Property Name="AlgoRuleToken" Type="Guid" />
+    <Property Name="Shares" Type="Int32" />
+    <NavigationProperty Name="EnumType" Relationship="AlgoTradeModel.FK_Transactions_EnumType_ActionType" FromRole="Transactions" ToRole="EnumTypes" />
+    <NavigationProperty Name="EnumType1" Relationship="AlgoTradeModel.FK_Transactions_EnumTypes_ConditionType" FromRole="Transactions" ToRole="EnumTypes" />
+    <NavigationProperty Name="EnumType2" Relationship="AlgoTradeModel.FK_Transactions_EnumTypes_PositionType" FromRole="Transactions" ToRole="EnumTypes" />
+  </EntityType>
+  <Association Name="FK_Logs_EnumTypes">
+    <End Role="EnumTypes" Type="AlgoTradeModel.EnumType" Multiplicity="0..1" />
+    <End Role="Logs" Type="AlgoTradeModel.Log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="LogTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Positions_EnumTypes">
+    <End Role="EnumTypes" Type="AlgoTradeModel.EnumType" Multiplicity="0..1" />
+    <End Role="Positions" Type="AlgoTradeModel.Position" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Positions">
+        <PropertyRef Name="PositionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_EnumType_ActionType">
+    <End Role="EnumTypes" Type="AlgoTradeModel.EnumType" Multiplicity="0..1" />
+    <End Role="Transactions" Type="AlgoTradeModel.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="ActionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_EnumTypes_ConditionType">
+    <End Role="EnumTypes" Type="AlgoTradeModel.EnumType" Multiplicity="0..1" />
+    <End Role="Transactions" Type="AlgoTradeModel.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="ConditionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_EnumTypes_PositionType">
+    <End Role="EnumTypes" Type="AlgoTradeModel.EnumType" Multiplicity="0..1" />
+    <End Role="Transactions" Type="AlgoTradeModel.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EnumTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="PositionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

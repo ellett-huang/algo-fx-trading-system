@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="220f9cf0-368d-4485-8769-fdebbc4dd7b5" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="3437d3cd-5956-4a0a-a23f-a7064288a082" name="Algo Core Control Process " requiredNamespace="AlgoTrade.Core">
+      <description>Main control Process  </description>
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="80424d34-8d23-45e1-8cf9-6a7d961a179a" direction="Forward">
+          <layerMoniker Id="05061174-231f-4e3e-983e-2e1883e17df9" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="6df33176-fc46-49e5-ad98-2d72a60dd9c5" direction="Forward">
+          <layerMoniker Id="2ce40137-bf08-4417-b73a-09eea8b2da28" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="05061174-231f-4e3e-983e-2e1883e17df9" name="Algo Process Thread" requiredNamespace="AlgoTrade.Process">
+      <description>The algo trading process </description>
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1d41c001-3b37-4334-9cd3-52562b4bab20" direction="Forward">
+          <layerMoniker Id="79fa899a-fa73-44b0-b56d-44275a296694" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="755b9310-ea01-446b-9999-07b5c871914b" direction="Forward">
+          <layerMoniker Id="c890478c-c09f-4ee6-96fc-118c24d5b213" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="06b9254b-446d-4819-b2a9-e8f7d30a17b3" direction="Forward">
+          <layerMoniker Id="2ce40137-bf08-4417-b73a-09eea8b2da28" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="79fa899a-fa73-44b0-b56d-44275a296694" name="Data Feed&#xD;&#xA;" requiredNamespace="AlgoTrade.DataFeeding">
+      <description>Live Data feeding API</description>
+    </layer>
+    <layer Id="c890478c-c09f-4ee6-96fc-118c24d5b213" name="Feature Texture Generation" requiredNamespace="AlgoTrade.Texture" />
+    <layer Id="2ce40137-bf08-4417-b73a-09eea8b2da28" name="DAL" />
+    <layer Id="629e941d-7fad-4851-8713-d35fd1a16f0e" name="Presentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9bccf36b-f48d-408e-b275-f2bf4e086390" direction="Forward">
+          <layerMoniker Id="2ce40137-bf08-4417-b73a-09eea8b2da28" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="940f8670-650d-460d-b5b2-fcb4347aed18" direction="Forward">
+          <layerMoniker Id="3437d3cd-5956-4a0a-a23f-a7064288a082" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="82cfba3e-133e-478c-b79b-df782dd5b63a" name="Control Panel" />
+        <layer Id="112222e0-31b6-4a69-8bb4-35d36dce74a6" name="MainDisplay" />
+        <layer Id="91767956-caf7-4764-a9a8-1cd5db2c5ab8" name="LogTracking&#xD;&#xA;" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

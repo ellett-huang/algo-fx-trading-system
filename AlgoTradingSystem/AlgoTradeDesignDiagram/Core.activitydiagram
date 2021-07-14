@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="331faa4b-727f-4c0c-a6d6-f893b9acb3e8" name="Core" linkedPackageId="bfac6c87-f190-441c-9f79-e8a661146ebb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b2a111f6-f048-4a19-bb7d-8513a6fd446c">
+      <elementDefinition Id="40d8343b-b577-4071-9aa8-5faf4a580bc7" />
+      <body>Initial Program</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="c78c4993-a401-49fa-ac46-8194671aad4d" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="bdd45309-3717-444a-9e94-7baf3d27337f">
+      <elementDefinition Id="6ccebec2-85ff-40ff-918d-65ad8e8a0838" />
+      <body>Abstract successful trading pairs</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="87e39406-aea8-4df7-9594-d3eb98998810" LastKnownName="Abstract" />
+      </annotatedElements>
+    </comment>
+    <comment Id="ec16cd42-f363-4570-9e26-3e11c6b5a85b">
+      <elementDefinition Id="6c0ce942-0643-49b2-b6ac-4210c07c65fd" />
+      <body>If it is not a pair order</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="305b6ef2-9f76-4cb2-b301-8169ae2f3165" LastKnownName="Do Nothing" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="39520bd9-5dca-45de-8d49-925e9b4bede3">
+      <profileInstance Id="7b2f92b7-d350-418d-90f7-11549f81fb6c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7a372326-f120-499b-97b0-82fecd491783">
+      <profileInstance Id="d660cc5b-68af-46c5-812b-f7a2a5925ac2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="bcc555c3-562b-4c6c-94cd-2363c8c3c2a7" name="Core" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="2820e8a4-3bd0-41cd-be39-a0577c484c7a" />
+        <nodes>
+          <initialNode Id="c78c4993-a401-49fa-ac46-8194671aad4d" name="Initial1" isLeaf="false">
+            <elementDefinition Id="4c8d03b1-b82c-4f4e-bf2e-8a510d274c35" />
+            <flowNodeTargets>
+              <controlFlow Id="7117b72e-4bbb-4a54-968e-f3250ec2509b" isLeaf="false">
+                <opaqueActionMoniker Id="f44bbd3f-e43f-45a8-861a-f6a179609db0" LastKnownName="Create Algo Processes based on Monitor Symbols List" />
+                <elementDefinition Id="57d98b35-9633-4719-8198-fcd9e93538be" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <acceptEventAction Id="94d7cdaa-b211-414f-a6d6-93600c27828d" name="Input Orders" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="6f2cd3ba-aa12-4388-a6c1-276b443a2b91" />
+            <flowNodeTargets>
+              <controlFlow Id="fd8010fe-4714-4c97-9585-f204eb41fbfd" isLeaf="false">
+                <opaqueActionMoniker Id="f1a3fdc1-e57d-4dd3-9fa6-54063cbea12d" LastKnownName="Add Orders into canadiates list" />
+                <elementDefinition Id="8bf015d1-8b56-4da2-b9aa-920f45036317" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <objectNode Id="8dc74ff9-3e2e-4f7a-887b-5f8106464622" name="Canadiates List" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="f368a299-c28d-4a27-901c-138735ad7172" />
+            <upperBound>
+              <literalInteger Id="8bac44d9-ff47-46e8-b13d-110a92c8ceb9" name="2147483647" value="2147483647">
+                <elementDefinition Id="e33da809-facb-4771-b58e-d69b9ed3361e" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="87e39406-aea8-4df7-9594-d3eb98998810" name="Abstract" isLeaf="false">
+            <description>Abstract successful trading pairs</description>
+            <elementDefinition Id="50e2e1ec-6d56-4c67-ad9f-7137f2291465" />
+            <flowNodeTargets>
+              <controlFlow Id="a82a1ba1-f98b-4aca-88e9-4411d5d1f5ce" isLeaf="false">
+                <opaqueActionMoniker Id="8d2e3bda-e02d-4833-a1d2-8c1ee96520b6" LastKnownName="Add order pair into target list and update the Monitor Symbol list LastUpdateTime " />
+                <elementDefinition Id="7e51de51-cc26-4410-a5df-c4989072fde8" />
+              </controlFlow>
+              <controlFlow Id="7ad65662-3de1-499a-baf0-8e8fbbbd1489" isLeaf="false">
+                <opaqueActionMoniker Id="452ddeda-f31c-40b7-a6c4-425018e2170a" LastKnownName="Remove Failed Pairs" />
+                <elementDefinition Id="f4c9d634-0276-4ab6-b9e8-9ff5f755ea90" />
+              </controlFlow>
+              <controlFlow Id="4c6af05c-3d6c-41ed-878e-b304c33a032b" isLeaf="false">
+                <opaqueActionMoniker Id="305b6ef2-9f76-4cb2-b301-8169ae2f3165" LastKnownName="Do Nothing" />
+                <elementDefinition Id="d25984c8-a162-4e16-95c2-e76328c21a55" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f1a3fdc1-e57d-4dd3-9fa6-54063cbea12d" name="Add Orders into canadiates list" isLeaf="false">
+            <elementDefinition Id="9da6a8ee-191e-4b4a-9a3c-2216a00b1fc9" />
+            <flowNodeTargets>
+              <controlFlow Id="baca35f4-25ab-4d31-bca8-5f67089a0fe7" isLeaf="false">
+                <decisionNodeMoniker Id="87e39406-aea8-4df7-9594-d3eb98998810" LastKnownName="Abstract" />
+                <elementDefinition Id="17cc4115-b0d3-40b7-b961-eba34231baa8" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="a14641ba-c7c2-46d7-82b7-25dbc88cbca5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8dc74ff9-3e2e-4f7a-887b-5f8106464622" LastKnownName="Canadiates List" />
+                <elementDefinition Id="962bdbe1-e9ea-4996-a1c5-6c3bcb4f04e4" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="8d2e3bda-e02d-4833-a1d2-8c1ee96520b6" name="Add order pair into target list and update the Monitor Symbol list LastUpdateTime " isLeaf="false">
+            <elementDefinition Id="1da28ed4-2e30-4b65-85ce-27158e9138c0" />
+            <flowNodeTargets>
+              <controlFlow Id="e187ec53-cf15-40ed-94dc-6b54ccc51a33" isLeaf="false">
+                <opaqueActionMoniker Id="604d731e-fe41-4037-85bc-08cf687ce532" LastKnownName="Update Target and Symbol list to harddisk file" />
+                <elementDefinition Id="c21fe543-c4c7-470c-a985-85bd4e155e4b" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="a3efb051-eb52-4cb6-9860-0628b7fdcbea" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="93afcaf6-0a53-4327-adcd-4b6fc1cf918b" LastKnownName="Target List(Static)" />
+                <elementDefinition Id="f74833f9-f0ed-4d76-bb8b-13e4f24ba03c" />
+              </objectFlow>
+              <objectFlow Id="1f511ec9-35b6-43f7-9b7f-78f837264ea7" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8fba25d1-ff42-4b16-82a7-30d8b77cc68c" LastKnownName="Monitor Symbols List(Static)" />
+                <elementDefinition Id="829eb9f9-5bff-4544-91eb-18615147253e" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="93afcaf6-0a53-4327-adcd-4b6fc1cf918b" name="Target List(Static)" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="6e2b1c8c-1d94-4edb-a100-f9f2c85c806a" />
+            <upperBound>
+              <literalInteger Id="a192e41d-a0ca-492b-8ee0-4bc6fc849525" name="2147483647" value="2147483647">
+                <elementDefinition Id="a2ad499e-17c9-4905-b707-02512bd43f33" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="452ddeda-f31c-40b7-a6c4-425018e2170a" name="Remove Failed Pairs" isLeaf="false">
+            <elementDefinition Id="853b2178-e019-43c6-ac32-32baf358faea" />
+            <objectFlowTargets>
+              <objectFlow Id="18711582-e3bf-4cd5-bb19-0b0d1f127581" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8dc74ff9-3e2e-4f7a-887b-5f8106464622" LastKnownName="Canadiates List" />
+                <elementDefinition Id="2fe4c2f8-4b9d-4431-987b-7fae9fab535d" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="305b6ef2-9f76-4cb2-b301-8169ae2f3165" name="Do Nothing" isLeaf="false">
+            <elementDefinition Id="11343e9b-c249-44e8-b542-7993ea378a6b" />
+          </opaqueAction>
+          <objectNode Id="8fba25d1-ff42-4b16-82a7-30d8b77cc68c" name="Monitor Symbols List(Static)" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="2669e4eb-34ce-4545-b81b-51812533cab3" />
+            <upperBound>
+              <literalInteger Id="1937f186-7024-47cb-8688-c81925a9226b" name="2147483647" value="2147483647">
+                <elementDefinition Id="971ba918-fc22-4b58-a0c2-cf41f83a863c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="604d731e-fe41-4037-85bc-08cf687ce532" name="Update Target and Symbol list to harddisk file" isLeaf="false">
+            <elementDefinition Id="2f0c2c9e-587c-4ffd-a6e0-b8c18915cc4e" />
+            <flowNodeTargets>
+              <controlFlow Id="b6ec44f1-342f-4f1c-abc4-e5cd04e21e14" isLeaf="false">
+                <activityFinalNodeMoniker Id="bff0a39f-caa8-4840-9bf5-cdd2e6e0c24b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6526b7d7-be1e-4313-b59f-79a130abde14" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f44bbd3f-e43f-45a8-861a-f6a179609db0" name="Create Algo Processes based on Monitor Symbols List" isLeaf="false">
+            <elementDefinition Id="0dc06e71-8280-404d-a62e-9cc02248c62d" />
+            <flowNodeTargets>
+              <controlFlow Id="1df45216-86bd-4df2-8e19-24cf3574856a" isLeaf="false">
+                <opaqueActionMoniker Id="f1a3fdc1-e57d-4dd3-9fa6-54063cbea12d" LastKnownName="Add Orders into canadiates list" />
+                <elementDefinition Id="9f0778e6-15f7-4b2e-a42f-ec7aa986cbf4" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="0f4273c8-49d0-40a7-86b8-448d8980b09f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8fba25d1-ff42-4b16-82a7-30d8b77cc68c" LastKnownName="Monitor Symbols List(Static)" />
+                <elementDefinition Id="72f29585-5792-485a-943a-6f79d5930ea7" />
+              </objectFlow>
+              <objectFlow Id="0bb2bcd8-ca98-478f-bbc5-cabe80fc99a3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="93afcaf6-0a53-4327-adcd-4b6fc1cf918b" LastKnownName="Target List(Static)" />
+                <elementDefinition Id="4b2ef079-1dc7-4f4c-b19f-d9aa8f550c28" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <activityFinalNode Id="bff0a39f-caa8-4840-9bf5-cdd2e6e0c24b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="bf8160a0-7dc3-4ef7-86d4-d2d42509b074" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="bfac6c87-f190-441c-9f79-e8a661146ebb" name="algoTrade">
+    <elementDefinition Id="330285c1-0373-41e5-9e10-e1c665986a60" />
+  </package>
+</activityRootModel>

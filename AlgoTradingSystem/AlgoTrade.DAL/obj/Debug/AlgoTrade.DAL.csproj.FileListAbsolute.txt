@@ -1,0 +1,15 @@
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.csprojResolveAssemblyReference.cache
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.DAL\bin\Debug\AlgoTrade.DAL.dll
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.DAL\bin\Debug\AlgoTrade.DAL.pdb
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.dll
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.pdb
+C:\Ellett\AlgoTradingSystem\AlgoTrade.DAL\bin\Debug\AlgoTrade.DAL.dll
+C:\Ellett\AlgoTradingSystem\AlgoTrade.DAL\bin\Debug\AlgoTrade.DAL.pdb
+C:\Ellett\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Ellett\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.dll
+C:\Ellett\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.pdb
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.DAL\bin\Debug\AlgoTrade.DAL.dll
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.DAL\bin\Debug\AlgoTrade.DAL.pdb
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.dll
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.pdb
+C:\trading\Algo_2\AlgoTradingSystem\AlgoTrade.DAL\obj\Debug\AlgoTrade.DAL.csprojResolveAssemblyReference.cache

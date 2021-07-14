@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="5621b01d-5eac-40c9-9af5-1fa1da8775a7" name="FeatureTextureGeneration" linkedPackageId="6a49ed91-4555-4be2-9d17-3c159ca00054" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="77d59a16-7d91-4f52-a27b-f6fe8c8f3b52" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="f0cb96e4-b0a5-4293-b279-70709e03d4fe" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2dcffeb4-3f32-415f-800b-2d6dbcf244b9">
+          <propertyInstance Id="d72abb44-6cef-446c-bfa5-38a8e55ba9be" name="BaseName">
+            <elementDefinition Id="f84c33d5-8d66-44ef-a950-aa86ba0dd905" />
+          </propertyInstance>
+          <elementDefinition Id="7cc52eba-5a37-48b3-aa14-bb7c1d35476c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="656dbdea-5c97-4c45-9db3-0781162285e3">
+          <propertyInstance Id="c5286605-649d-4285-b717-02e961e7c6e0" name="ClrAttributes">
+            <elementDefinition Id="baa8f308-6ff4-4296-8cf3-04f540f53bc6" />
+          </propertyInstance>
+          <elementDefinition Id="6d0770fc-84c6-438d-90b7-b771028abdc4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4c45db93-4005-4834-baff-31d523e01998">
+          <propertyInstance Id="39e0231f-42e9-4bfd-b62b-e19ee6e9f5d1" name="Usings">
+            <elementDefinition Id="13efe0a4-0a5b-4bf6-bfb4-16f6e0821622" />
+          </propertyInstance>
+          <elementDefinition Id="001f6474-3eaa-4276-8de6-dce0c962b028" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="61e0317a-5bbb-4061-bde7-fafee3f001a8" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="edf74c85-abc4-424d-965a-e1c99cda4301" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="073b5f96-51e3-42e1-8e4a-0c669f8e7f8c">
+          <propertyInstance Id="75fdfff0-6a00-49ff-be6d-3ae4e01ca2d1" name="Alias" value="AlgoCoreClass|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="e7b58d74-2597-437d-9070-fa093f5be425" />
+          </propertyInstance>
+          <elementDefinition Id="890d32ce-8578-4421-aec2-2a02f3d14df0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="764e0fdc-6fc6-4e24-809e-d576892ac25d">
+          <propertyInstance Id="3a17bf14-889c-4a34-855b-f7a31ce2f793" name="TemplateFilePath" value="AlgoCoreClass=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="73557c30-e57f-4e88-85de-b49e1e6524eb" />
+          </propertyInstance>
+          <elementDefinition Id="f54f3895-3cc8-42a2-88cc-228640e9a3d7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1749eb68-f907-497b-8c0d-0f020a2abc04">
+          <propertyInstance Id="32413363-f035-42f5-9172-3d58209726cd" name="ProjectPath" value="AlgoCoreClass=..\AlgoTrade.Core.Controller\AlgoTrade.Core.Controller.csproj|EnumTemplate=..\algoTradeLib\algoTradeLib.csproj|InterfaceTemplate=..\algoTradeLib\algoTradeLib.csproj|StructTemplate=..\algoTradeLib\algoTradeLib.csproj">
+            <elementDefinition Id="b848501d-8472-42f2-a71c-9ad9ebd6977a" />
+          </propertyInstance>
+          <elementDefinition Id="0fb2ea99-52c5-4669-b40e-2093827dee92" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8056fb4d-1213-4df2-85de-e1a2e6d89881">
+          <propertyInstance Id="1de313c1-dadb-4c01-aab1-693c87810fb0" name="TargetDirectory" value="AlgoCoreClass=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="2deffac2-efbc-4bac-84a9-63c740465926" />
+          </propertyInstance>
+          <elementDefinition Id="3c3dd084-cf31-49f8-9112-3876754816af" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8eb0b7b9-5be8-42e6-ad39-08c515698cb4">
+          <propertyInstance Id="6ec74703-f29b-4c0c-90ca-8f98b196a8fa" name="TargetName" value="AlgoCoreClass={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="a30ee56d-81a6-4172-b427-cbfe7ba95e1e" />
+          </propertyInstance>
+          <elementDefinition Id="2f10b22c-b93c-41c8-ac57-ad09c0a25d09" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8042e47e-fe32-4662-9b51-d3e60f91476c">
+          <propertyInstance Id="63279e95-a4db-4766-8097-2268af16ef57" name="Overwrite" value="AlgoCoreClass=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="9c9a830d-ac4a-41d4-a81e-8c3e2e7fd4a6" />
+          </propertyInstance>
+          <elementDefinition Id="54559f95-f5c4-4ca4-924b-d56abd76ff5d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="41980539-9ef6-4484-86a7-40062010c994">
+          <propertyInstance Id="1f7a72dd-0f2b-4b18-b4b1-9a11ff4fce06" name="Parameters">
+            <elementDefinition Id="e5e93618-b244-43d3-8a6d-75d47b459811" />
+          </propertyInstance>
+          <elementDefinition Id="b8164345-b95f-4044-8694-95d92842a4ae" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c608fa77-bb07-4340-85cc-425eabe4dc66">
+      <profileInstance Id="17a7669d-689f-4d9c-bc0c-c45461133f7b" name="CSharpProfile">
+        <elementDefinition Id="d9e1f7e4-92a9-4903-9045-df18a4652ed5" />
+      </profileInstance>
+      <elementDefinition Id="ba1b3a06-abab-42cb-a6cb-29a10015f6d8" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="57aabe53-d2dc-439d-bbe7-9948e527e117">
+      <profileInstance Id="e3368bd7-dd31-434b-80c0-941360621ce8" name="TextTemplateBindings">
+        <elementDefinition Id="f0c8ac52-877d-4cd8-ac2a-31acffa3a96e" />
+      </profileInstance>
+      <elementDefinition Id="ee8474a6-3120-4955-987d-a6af40e0b443" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="b7be76f9-ad1c-4f02-ae5b-6c4797a64b6d" name="TextureGenerator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0b916bd9-fbf0-4d25-b624-a0a41b4669c8" />
+        <suppliersInternal>
+          <dependency Id="b2efbc12-0e2b-48a2-95b0-fb17846abe4e">
+            <componentMoniker Id="27211054-945d-49f6-8ce1-47170e23c93f" LastKnownName="MACD" />
+            <elementDefinition Id="52d0dfe5-0cbc-4db1-8a77-c04595d93ab4" />
+          </dependency>
+          <dependency Id="d0dd9ebc-bc19-417a-a8ae-27ec1efd0997">
+            <componentMoniker Id="562224cd-1fc2-4b4c-b2ad-c13e28ec473a" LastKnownName="ADX" />
+            <elementDefinition Id="16144f0e-3dac-471d-a4ef-d73b69f98305" />
+          </dependency>
+          <dependency Id="707e1b0e-f8a9-405c-b73f-6b251d6688af">
+            <componentMoniker Id="07b3d555-1f33-4765-b7c8-701bc9a46712" LastKnownName="ATR" />
+            <elementDefinition Id="3c76c2b6-5ec7-4e83-92b8-645d35b28455" />
+          </dependency>
+          <dependency Id="68c37e8d-8693-4e54-bf41-7fa90f57fbe0">
+            <componentMoniker Id="f589b453-6f8e-4794-9f21-1b94981b1fac" LastKnownName="CMF" />
+            <elementDefinition Id="5a4e8f92-5251-474a-845a-ef16cf16684f" />
+          </dependency>
+          <dependency Id="1249668c-482f-4d2a-b4e2-b286f58d9355">
+            <componentMoniker Id="f2a92a16-3d7b-4d25-b422-a6a16c215cc5" LastKnownName="EMV" />
+            <elementDefinition Id="9e9c7b3b-b920-4243-9972-81c1fad0425c" />
+          </dependency>
+          <dependency Id="2ee27499-7be0-40b1-a183-5a263441c519">
+            <componentMoniker Id="5fc6a0af-eabb-4032-a8c0-3b7e1fb60f13" LastKnownName="MFI" />
+            <elementDefinition Id="1e270583-b235-4c61-a009-5dbb09aa781e" />
+          </dependency>
+          <dependency Id="f18b7b4c-fcd6-4c1e-abe7-2f0a9c0a9dc4">
+            <componentMoniker Id="42487370-4299-4b35-bb1c-5de236197116" LastKnownName="RSI" />
+            <elementDefinition Id="89fce115-49d1-469f-8546-91fe770b835e" />
+          </dependency>
+          <dependency Id="70703b7d-1d13-4023-8a9c-51c0f3964741">
+            <componentMoniker Id="14667418-b46c-4343-9604-8cc3c7252362" LastKnownName="SlowEMA" />
+            <elementDefinition Id="9af4f612-4096-47c2-a8d7-96914e29d2fe" />
+          </dependency>
+          <dependency Id="c303d995-a7a1-43eb-82a1-424b952cfa35">
+            <componentMoniker Id="a1093af6-79a4-408a-8f06-62ae9dd5a314" LastKnownName="FastEMA" />
+            <elementDefinition Id="9a712993-de8d-468f-86f1-c1eb60c6fd6c" />
+          </dependency>
+          <dependency Id="e623eb06-676a-4a3e-b007-46110c7de87c">
+            <componentMoniker Id="34e90e4f-2efb-4097-bf00-0e57796b57e4" LastKnownName="STRSI" />
+            <elementDefinition Id="ec0aafb8-7255-479d-9025-fe4df5ef6b39" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="27211054-945d-49f6-8ce1-47170e23c93f" name="MACD" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7dfe2bce-60f3-41fd-8582-c84d272987b9" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="562224cd-1fc2-4b4c-b2ad-c13e28ec473a" name="ADX" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b2c2d8dc-463c-4c2a-b11a-975cfa6ef448" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="07b3d555-1f33-4765-b7c8-701bc9a46712" name="ATR" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="33262a91-b357-43bc-9e03-396ed6919456" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f589b453-6f8e-4794-9f21-1b94981b1fac" name="CMF" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b4621a1b-6b34-4057-974d-df661aaa2622" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f2a92a16-3d7b-4d25-b422-a6a16c215cc5" name="EMV" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0715e91-653d-4b10-8b30-9aaf31a997e6" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5fc6a0af-eabb-4032-a8c0-3b7e1fb60f13" name="MFI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f068b73-5b6a-4759-9bc9-3545191a233b" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="42487370-4299-4b35-bb1c-5de236197116" name="RSI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d279af6-b0c8-4e78-9b5b-d78699038f1e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="14667418-b46c-4343-9604-8cc3c7252362" name="SlowEMA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6749c112-7c78-40dc-84d2-854290ec7091" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a1093af6-79a4-408a-8f06-62ae9dd5a314" name="FastEMA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="938f69ec-809b-47af-b094-c09462efd804" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="34e90e4f-2efb-4097-bf00-0e57796b57e4" name="STRSI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f43d918c-b170-47de-a605-da2ce75db0a1" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="1a8c1bdc-42d8-404f-9eca-0424dd159937" name="TRIX" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77dfbafe-61b0-490c-8fa8-8b971b44839f" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8842853c-3b80-45a5-bfe4-4ac60d75c7e3" name="TSI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1a27acc3-5251-46a2-aa44-8422d69438b1" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="535a2c61-afd4-4205-a4d7-6e48ca72f045" name="VolumeMove" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="40f36223-414f-476a-ab7e-f221f1fd9905" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e2453eae-4d27-4d44-a428-db13dfa9ca05" name="Vortex" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4ca5e5c1-f2b5-4da6-b8f8-8b96a17b9bf2" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8606aeed-7320-4c27-91a1-95bd0f815835" name="WiR" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="927b6b42-fc28-4926-9889-8646bc67dce3" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f9a70ee5-b358-4de3-9d3e-f3111190f84f" name="SMA15" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f7aef70c-f82c-4ce8-8736-9284c3e9f7fb" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f07dc8e2-02a2-4278-a306-38a1709af150" name="SMA30" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd1cb86e-40df-49a2-8e23-72db5ff9b2b1" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="43843958-1c71-4f14-bc9d-9c5f5dcd30e9" name="SMA60" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b2c8c49b-45c7-492a-82f4-8a87236aa882" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="64e35aca-ad9c-4d56-b66d-1e63eaee6678" name="SMA120" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1edd9a0b-1e60-4376-a894-cbc1a5b2f77d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="59696e09-99c8-4138-9862-4bd0da048e19" name="PriceMove" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7593a22d-99d2-4cec-8df7-4fff525fb709" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="6a49ed91-4555-4be2-9d17-3c159ca00054" name="algoTrade">
+    <elementDefinition Id="330285c1-0373-41e5-9e10-e1c665986a60" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ff50c2ae-f8a3-4ecc-9e2f-63de3a7f220a">
+        <profileInstance Id="35c78ee2-0821-4439-8848-039ed970db9e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="13784488-1bbc-4a9a-873b-f5ce3265af03">
+        <profileInstance Id="28ad4a06-6e60-43dd-88db-10803b847e04" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

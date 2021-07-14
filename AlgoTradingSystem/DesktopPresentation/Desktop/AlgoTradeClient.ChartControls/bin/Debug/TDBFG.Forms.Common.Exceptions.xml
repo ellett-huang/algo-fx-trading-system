@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TDBFG.Forms.Common.Exceptions</name>
+    </assembly>
+    <members>
+        <member name="T:AlgoTrade.Common.Exceptions.ApplicationLockedByOtherUserException">
+            <summary>
+            ApplicationLockedByOtherUserException
+            </summary>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.BaseException">
+            <summary>
+            Base Exception
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_BASE_EXCEPTION">
+            <summary>
+            Base exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_APPLICATION_LOCKED_BY_OTHER_USER_EXCEPTION">
+            <summary>
+            Application locked by other user exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_APPLICATION_NOT_FOUND_EXCEPTION">
+            <summary>
+            Application not found exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_CONNECTION_FAILED_EXCEPTION">
+            <summary>
+            Connection failed exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_CORE_ARGUMENT_EXCEPTION">
+            <summary>
+            Core argument exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_CORE_EXCEPTION">
+            <summary>
+            Core exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_DAO_EXCEPTION">
+            <summary>
+            DAO  exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_FAIL_TO_GENERATE_PAPER_FORMS_EXCEPTION">
+            <summary>
+            Fail to generate paper forms exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_PAPER_FORM_NOT_FOUND_EXCEPTION">
+            <summary>
+            Paper form not found exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_FAIL_TO_SAVE_APPLICATION_DUE_TO_VALIDATION_EXCEPTION">
+            <summary>
+            Fail to save applicaiton due to validation exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_APPLICATION_HAS_BEEN_MODIFIED_EXCEPTION">
+            <summary>
+            Application has been modified exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_VALIDATION_RULE_NOT_FOUND_EXCEPTION">
+            <summary>
+            Validation rule not found exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_VALIDATION_MESSAGE_NOT_FOUND_EXCEPTION">
+            <summary>
+            Validation message not found exception event ID
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Exceptions.BaseException.EVENT_ID_APPLICANT_PROFILE_LOCKED_BY_OTHER_USER_EXCEPTION">
+            <summary>
+            Applicant profile locked by other user exception event ID
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.BaseException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.BaseException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.BaseException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.BaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.BaseException.#ctor(System.String,System.String[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="parameters">List of parameters</param>
+        </member>
+        <member name="P:AlgoTrade.Common.Exceptions.BaseException.EventID">
+            <summary>
+            Event ID
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Exceptions.BaseException.Parameters">
+            <summary>
+            List of string parameters
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationLockedByOtherUserException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationLockedByOtherUserException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationLockedByOtherUserException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationLockedByOtherUserException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationLockedByOtherUserException.#ctor(System.String,System.String[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="parameters">List of parameters</param>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.ApplicationNotFoundException">
+            <summary>
+            ApplicationNotFoundException
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationNotFoundException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.ConnectionFailedException">
+            <summary>
+            ConnectionFailedException
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ConnectionFailedException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ConnectionFailedException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ConnectionFailedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ConnectionFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.ApplicantProfileLockedByOtherUserException">
+            <summary>
+            ApplicantProfileLockedByOtherUserException
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicantProfileLockedByOtherUserException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicantProfileLockedByOtherUserException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicantProfileLockedByOtherUserException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicantProfileLockedByOtherUserException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicantProfileLockedByOtherUserException.#ctor(System.String,System.String[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="parameters">List of parameters</param>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.CoreArgumentException">
+            <summary>
+            CoreArgumentException
+            </summary>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.CoreException">
+            <summary>
+            CoreException
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreArgumentException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreArgumentException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreArgumentException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.CoreArgumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.DALException">
+            <summary>
+            DaoException
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.DALException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.DALException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.DALException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.DALException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+        <member name="T:AlgoTrade.Common.Exceptions.ApplicationHasBeenModifiedException">
+            <summary>
+            ApplicationHasBeenModifiedException
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationHasBeenModifiedException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationHasBeenModifiedException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationHasBeenModifiedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">Message</param>
+            <param name="innerException">Inner exception</param>
+        </member>
+        <member name="M:AlgoTrade.Common.Exceptions.ApplicationHasBeenModifiedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serializationInfo">Serialization information</param>
+            <param name="streamingContext">Streaming context</param>
+        </member>
+    </members>
+</doc>

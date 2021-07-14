@@ -1,0 +1,5 @@
+C:\trading\Algo_2\AlgoTradingSystem\IBCSharpClient\bin\Debug\CSharpAPI.dll
+C:\trading\Algo_2\AlgoTradingSystem\IBCSharpClient\bin\Debug\CSharpAPI.pdb
+C:\trading\Algo_2\AlgoTradingSystem\IBCSharpClient\obj\x86\Debug\CSharpAPI.dll
+C:\trading\Algo_2\AlgoTradingSystem\IBCSharpClient\obj\x86\Debug\CSharpAPI.pdb
+C:\trading\Algo_2\AlgoTradingSystem\IBCSharpClient\obj\x86\Debug\IBCSharpAPI.csprojResolveAssemblyReference.cache

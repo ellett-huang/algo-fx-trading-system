@@ -1,0 +1,12 @@
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\AlgoTrade.Core.AlgoProcess.dll
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\AlgoTrade.Core.AlgoProcess.pdb
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\algoTradeLib.dll
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\TDBFG.Forms.Common.Entities.dll
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\TDBFG.Forms.Common.Entities.pdb
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\TDBFG.Forms.Common.Entities.xml
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\bin\Debug\algoTradeLib.pdb
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\obj\Debug\AlgoTrade.Core.AlgoProcess.dll
+C:\Trading\algo\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\obj\Debug\AlgoTrade.Core.AlgoProcess.pdb
+C:\Ellett\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\obj\Debug\ResolveAssemblyReference.cache
+C:\Ellett\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\obj\Debug\AlgoTrade.Core.AlgoProcess.dll
+C:\Ellett\AlgoTradingSystem\AlgoTrade.Core.AlgoProcess\obj\Debug\AlgoTrade.Core.AlgoProcess.pdb

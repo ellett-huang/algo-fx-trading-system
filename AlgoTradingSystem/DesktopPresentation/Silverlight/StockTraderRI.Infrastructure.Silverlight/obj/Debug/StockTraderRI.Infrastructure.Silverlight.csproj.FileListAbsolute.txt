@@ -1,0 +1,3 @@
+C:\trading\Algo_2\AlgoTradingSystem\DesktopPresentation\Silverlight\StockTraderRI.Infrastructure.Silverlight\obj\Debug\StockTraderRI.Infrastructure.Silverlight.csprojResolveAssemblyReference.cache
+C:\trading\Algo_2\AlgoTradingSystem\DesktopPresentation\Silverlight\StockTraderRI.Infrastructure.Silverlight\obj\Debug\StockTraderRI.Infrastructure.Properties.Resources.resources
+C:\trading\Algo_2\AlgoTradingSystem\DesktopPresentation\Silverlight\StockTraderRI.Infrastructure.Silverlight\obj\Debug\StockTraderRI.Infrastructure.Silverlight.csproj.GenerateResource.Cache

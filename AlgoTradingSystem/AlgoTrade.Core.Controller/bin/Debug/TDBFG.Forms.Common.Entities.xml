@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TDBFG.Forms.Common.Entities</name>
+    </assembly>
+    <members>
+        <member name="M:AlgoTrade.Common.Entities.AlgoTradingRule.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Entities.AlgoTradingRule.#ctor(AlgoTrade.Common.Entities.AlgoTradingRule)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AlgoTrade.Common.Entities.FeatureTexture">
+            <summary>
+            Serializable class , represents the algo feature character one certain timeline spot.
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Entities.FeatureTexture.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Entities.FeatureTexture.#ctor(AlgoTrade.Common.Entities.FeatureTexture)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Entities.FeatureTexture.Compare(AlgoTrade.Common.Entities.FeatureTexture,System.Single@,System.Boolean)">
+            <summary>
+            Return if all the features ALL above or ALL below the comparing one.
+            </summary>
+            <param name="featureTexture"></param>
+            <param name="result"></param>
+            <param name="LogDB"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AlgoTrade.Common.Entities.FeatureTexture.Compare(AlgoTrade.Common.Entities.FeatureTexture,System.Single@,System.String,System.Boolean)">
+            <summary>
+            Return if all the features ALL above or ALL below the comparing one.
+            </summary>
+            <param name="featureTexture"></param>
+            <param name="result"></param>
+            <param name="LogDB"></param>
+            <returns></returns>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.MatchDetail">
+            <summary>
+            The MatchDetail of current object.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.FastEMA">
+            <summary>
+            The value of FastEMA Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.SlowEMA">
+            <summary>
+            The value of FastEMA Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.MACD">
+            <summary>
+            The value of MACD Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.RSI">
+            <summary>
+            The value of SlowEMA Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.MFI">
+            <summary>
+            The value of MFI Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.TSI">
+            <summary>
+            The value of TSI Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.CCI">
+            <summary>
+            The value of CCI Indicator.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.VolumeExceed">
+            <summary>
+            The value of VolumeExceed composite feature.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.ADX">
+            <summary>
+            The value of ADX.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.ATR">
+            <summary>
+            The value of ATR.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.ALI">
+            <summary>
+            The value of ALI.
+            </summary>
+        </member>
+        <member name="P:AlgoTrade.Common.Entities.FeatureTexture.MiddleBuffer">
+            <summary>
+            The value of MiddleBuffer.
+            </summary>
+        </member>
+        <member name="T:AlgoTrade.Common.Entities.TradingData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AlgoTrade.Common.Entities.TradingData.#ctor(AlgoTrade.Common.Entities.TradingData)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Entities.TradingData.Symbol">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:AlgoTrade.Common.Entities.TradingData.Low">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

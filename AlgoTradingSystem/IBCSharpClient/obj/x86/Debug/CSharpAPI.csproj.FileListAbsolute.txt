@@ -1,0 +1,5 @@
+C:\TWS API\source\csharpclient\bin\Debug\CSharpAPI.dll
+C:\TWS API\source\csharpclient\bin\Debug\CSharpAPI.pdb
+C:\TWS API\source\csharpclient\obj\x86\Debug\CSharpAPI.csprojResolveAssemblyReference.cache
+C:\TWS API\source\csharpclient\obj\x86\Debug\CSharpAPI.dll
+C:\TWS API\source\csharpclient\obj\x86\Debug\CSharpAPI.pdb
